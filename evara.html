@@ -191,8 +191,16 @@ lightbox.addEventListener('click', () => {
     lightbox.classList.remove('active');
 });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
 
-</body>
-</html>
+<script>
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'fadeDuration': 300,
+    'imageFadeDuration': 300,
+    'albumLabel': "Image %1 of %2"
+});
+</script>
 </body>
 </html>
