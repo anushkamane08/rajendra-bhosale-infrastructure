@@ -184,29 +184,6 @@ AOS.init({
     offset:100
 });
 </script>
-
-<!-- Lightbox HTML -->
-<div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="" alt="">
-</div>
-
-<!-- Lightbox JavaScript -->
-<script>
-const galleryImages = document.querySelectorAll('.gallery img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-
-galleryImages.forEach(img => {
-    img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = img.src;
-    });
-});
-
-lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-});
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
 
 <script>
