@@ -170,5 +170,40 @@ AOS.init({
     offset:100
 });
 </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true,
+    offset:100
+});
+</script>
+
+<!-- Lightbox HTML -->
+<div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- Lightbox JavaScript -->
+<script>
+const galleryImages = document.querySelectorAll('.gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.classList.add('active');
+        lightboxImg.src = img.src;
+    });
+});
+
+lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+</script>
+
+</body>
+</html>
 </body>
 </html>
