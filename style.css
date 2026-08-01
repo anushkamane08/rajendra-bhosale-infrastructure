@@ -978,3 +978,35 @@ footer{
 .gallery img:hover{
     transform:scale(1.05);
 }
+/* ===== FINAL HERO OVERRIDE ===== */
+
+.project-hero{
+    background: #0B1F3A !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 80px 20px !important;
+}
+
+.project-hero img{
+    width: 70% !important;
+    max-width: 500px !important;
+    height: auto !important;
+    margin-bottom: 25px !important;
+    display: block !important;
+}
+
+.project-hero h1{
+    color: #fff !important;
+    font-size: 70px !important;
+    margin: 10px 0 5px !important;
+}
+
+.project-hero p{
+    color: #fff !important;
+    font-size: 24px !important;
+    margin: 0 !important;
+}
