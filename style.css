@@ -1010,3 +1010,13 @@ footer{
     font-size: 24px !important;
     margin: 0 !important;
 }
+/* FINAL HERO BACKGROUND */
+
+.hero-blue{
+    background:#0B1F3A !important;
+}
+
+.hero-blue h1,
+.hero-blue p{
+    color:#fff !important;
+}
